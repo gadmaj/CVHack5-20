@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thinking</title>
+</head>
+<body>
+	<header>
+		<h1>Thinking</h1>
+	</header>
+	<div>
+		<h2>Click the button to count the amount of times you have clicked it:</h2>
+		<button id="clicker" type="button">Click Me!</button>
+		<div id="clickcount">
+			<p>You have clicked the button <span>0</span> times.</p>
+		</div>
+	</div>
+	<script>
+		let count=0;
+		document.getElementById("clicker").onclick = function(){
+			count=count+1;
+			document.getElementById("clickcount").innerHTML = '<p>You have clicked the button <span>'+count+'</span> times.</p>';
+		}
+	</script>
+</body>
+</html>
